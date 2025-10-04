@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container p-3">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="fylo col-12 col-lg-6">
+          <div class="container p-2 p-lg-4 ps-1">
+            <div class="logo p-3">
+              <img
+                class="img-fluid"
+                src="./images/logo.svg"
+                alt="image of the page logo"
+              />
+            </div>
+            <div class="icons">
+              <ul class="list-unstyled d-flex mt-3">
+                <li class="mx-3">
+                  <img
+                    class="img-fluid"
+                    src="./images/icon-document.svg"
+                    alt="document icon"
+                  />
+                </li>
+                <li class="mx-3">
+                  <img
+                    class="img-fluid"
+                    src="./images/icon-folder.svg"
+                    alt="folder icon"
+                  />
+                </li>
+                <li class="mx-3">
+                  <img
+                    class="img-fluid"
+                    src="./images/icon-upload.svg"
+                    alt="upload icon"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="cap col-12 col-lg-6">
+          <div class="container py-3 px-4">
+            <p>
+              You’ve used <span class="fw-bold">815 GB</span> of your storage
+            </p>
+            <div class="storage">
+              <div class="bar">
+                <div class="progress">
+                  <span></span>
+                </div>
+                <div class="gigs d-flex justify-content-between my-3">
+                  <p>0 GB</p>
+                  <p>1000 GB</p>
+                </div>
+              </div>
+              <div class="pop bg-white">
+                185 <span class="text-secondary ps-1"> GB LEFT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="./js/all.min.js"></script>
+  </body>
+</html>

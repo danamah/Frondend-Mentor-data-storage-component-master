@@ -1,0 +1,184 @@
+:root{
+    --main-font:"Raleway", sans-serif;
+}
+
+body{
+    background-image: url("../images/bg-desktop.png"),linear-gradient(#0C122C, #0C122C);
+    background-repeat: no-repeat;
+    background-position: -1% 180%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+@media screen and (max-width:992px) {
+    body{
+        background-image: url("../images/bg-mobile.png"),linear-gradient(#0C122C, #0C122C);
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.container div .fylo .container,
+.container div .cap .container {
+    background-color: #1D2C67;
+}
+.container div .fylo .container {
+    width: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+@media screen and (max-width:992px){
+    .container div .fylo .container{
+        width: 85%;
+    }
+}
+.container div .fylo .container .icons ul li{
+    width: 45px;
+    height: 45px;
+    background-color: #0C122C;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div .cap .container{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: rgb(221, 219, 255);
+    font-family: var(--main-font);
+    margin-top: 26px;
+}
+@media screen and (max-width:992px){
+    .container div .cap .container{
+        width: 85%;
+    }
+}
+.container div .cap .container .storage{
+    position: relative;
+}
+.container div .cap .container .storage .pop{
+  padding: 20px;
+  width: 35%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  bottom: 160%;
+  left: 85%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.container div .cap .container .storage .pop span{
+    font-size: 14px;
+}
+.container div .cap .container .storage .pop::after{
+    content: "";
+    position: absolute;
+    border-width: 18px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+    left: 100%;
+    bottom: -17px;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+@media screen and (max-width: 992px) {
+    .container div .cap .container .storage .pop{
+        width: 30%;
+        left: 50%;
+        top: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-block: 30px;
+        padding-inline: 18px;
+        font-size: 35px;
+}
+ .container div .cap .container .storage .pop span{
+    font-size: 12px;
+    font-weight: bold;
+ }
+.container div .cap .container .storage .pop::after{
+    display: none;
+}
+}
+@media screen and (max-width: 776px){
+    .container div .cap .container .storage .pop{
+        width: 60%;
+    }
+ .container div .cap .container .storage .pop{
+    font-size: 28px;
+ }
+ .container div .cap .container .storage .pop span{
+    font-size: 14px;
+ }
+}
+.container div .cap .container .storage .bar{
+    margin-top: 20px;
+}
+.container div .cap .container .storage .bar .progress{
+    background-color: #0C122C;
+    height: 18px;
+    width: 100%;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -ms-border-radius: 90px;
+    -o-border-radius: 90px;
+    position: relative;
+}
+.container div .cap .container .storage .bar .progress span{
+    background-image: linear-gradient(to right, #FF9E99, #FF5597);
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -ms-border-radius: 90px;
+    -o-border-radius: 90px;
+    padding-right: 5px;
+}
+.container div .cap .container .storage .bar .progress span::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: white;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) translateX(50%);
+    -webkit-transform: translateY(-50%) translateX(50%);
+    -moz-transform: translateY(-50%) translateX(50%);
+    -ms-transform: translateY(-50%) translateX(50%);
+    -o-transform: translateY(-50%) translateX(50%);
+}
